@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FoodLoginComponent } from './food-login/food-login.component';
 import { FoodRegisterComponent } from './food-register/food-register.component';
 import { FoodLoginPageComponent } from './food-login-page/food-login-page.component';
+import { FoodvegComponent } from './foodveg/foodveg.component';
 
 const myroute : Routes = [
   {
@@ -26,6 +27,18 @@ const myroute : Routes = [
   {
     path : "loginpage",
     component : FoodLoginPageComponent
+  },
+  {
+    path : "vegetarian",
+    component : FoodvegComponent
+  },
+  {
+    path : "nonveg",
+    component : FoodLoginPageComponent
+  },
+  {
+    path : "dessert",
+    component : FoodLoginPageComponent
   }
 ]
 @NgModule({
@@ -35,7 +48,8 @@ const myroute : Routes = [
     NavbarComponent,
     FoodLoginComponent,
     FoodRegisterComponent,
-    FoodLoginPageComponent
+    FoodLoginPageComponent,
+    FoodvegComponent
   ],
   imports: [
     BrowserModule,
