@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FoodLoginComponent } from './food-login/food-login.component';
 import { FoodRegisterComponent } from './food-register/food-register.component';
+import { FoodLoginPageComponent } from './food-login-page/food-login-page.component';
 
 const myroute : Routes = [
   {
@@ -21,6 +22,10 @@ const myroute : Routes = [
   {
     path : "register",
     component : FoodRegisterComponent
+  },
+  {
+    path : "loginpage",
+    component : FoodLoginPageComponent
   }
 ]
 @NgModule({
@@ -29,7 +34,8 @@ const myroute : Routes = [
     HomePageComponent,
     NavbarComponent,
     FoodLoginComponent,
-    FoodRegisterComponent
+    FoodRegisterComponent,
+    FoodLoginPageComponent
   ],
   imports: [
     BrowserModule,
