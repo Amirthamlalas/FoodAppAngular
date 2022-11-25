@@ -10,6 +10,7 @@ import { FoodLoginComponent } from './food-login/food-login.component';
 import { FoodRegisterComponent } from './food-register/food-register.component';
 import { FoodLoginPageComponent } from './food-login-page/food-login-page.component';
 import { FoodvegComponent } from './foodveg/foodveg.component';
+import { FoodNonvegComponent } from './food-nonveg/food-nonveg.component';
 
 const myroute : Routes = [
   {
@@ -34,7 +35,7 @@ const myroute : Routes = [
   },
   {
     path : "nonveg",
-    component : FoodLoginPageComponent
+    component : FoodNonvegComponent
   },
   {
     path : "dessert",
@@ -49,7 +50,8 @@ const myroute : Routes = [
     FoodLoginComponent,
     FoodRegisterComponent,
     FoodLoginPageComponent,
-    FoodvegComponent
+    FoodvegComponent,
+    FoodNonvegComponent
   ],
   imports: [
     BrowserModule,
