@@ -11,6 +11,7 @@ import { FoodRegisterComponent } from './food-register/food-register.component';
 import { FoodLoginPageComponent } from './food-login-page/food-login-page.component';
 import { FoodvegComponent } from './foodveg/foodveg.component';
 import { FoodNonvegComponent } from './food-nonveg/food-nonveg.component';
+import { FoodDessertComponent } from './food-dessert/food-dessert.component';
 
 const myroute : Routes = [
   {
@@ -39,7 +40,7 @@ const myroute : Routes = [
   },
   {
     path : "dessert",
-    component : FoodLoginPageComponent
+    component : FoodDessertComponent
   }
 ]
 @NgModule({
@@ -51,7 +52,8 @@ const myroute : Routes = [
     FoodRegisterComponent,
     FoodLoginPageComponent,
     FoodvegComponent,
-    FoodNonvegComponent
+    FoodNonvegComponent,
+    FoodDessertComponent
   ],
   imports: [
     BrowserModule,
