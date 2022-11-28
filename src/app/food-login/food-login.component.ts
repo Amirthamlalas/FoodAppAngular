@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class FoodLoginComponent {
 
+  username=""
+  password=""
+
+  login=()=>{
+    let data:any={
+      "username":this.username,
+      "password":this.password
+    }
+    console.log(data)
+  }
+
 }

@@ -12,6 +12,7 @@ import { FoodLoginPageComponent } from './food-login-page/food-login-page.compon
 import { FoodvegComponent } from './foodveg/foodveg.component';
 import { FoodNonvegComponent } from './food-nonveg/food-nonveg.component';
 import { FoodDessertComponent } from './food-dessert/food-dessert.component';
+import { FormsModule } from '@angular/forms';
 
 const myroute : Routes = [
   {
@@ -58,7 +59,8 @@ const myroute : Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
